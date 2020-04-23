@@ -35,7 +35,7 @@ export class MovieService {
   }
 
   async saveToList(movie: any) {
-    this.apiService.post(movie);
+    await this.apiService.post(movie);
     this.LoadMovieList();
   }
 }

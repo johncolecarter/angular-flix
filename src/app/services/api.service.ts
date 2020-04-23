@@ -13,7 +13,7 @@ export class ApiService {
     return this.httpClient.get<any>(this.API_URL).toPromise();
   }
 
-  post(data: any) {
-    return this.httpClient.post<any>(this.API_URL, data).toPromise();
+  async post(data: any) {
+    return await this.httpClient.post<any>(this.API_URL, data).toPromise();
   }
 }
