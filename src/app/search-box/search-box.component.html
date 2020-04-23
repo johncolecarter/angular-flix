@@ -1,5 +1,3 @@
 <div id="search" class="Search">
-    <input (keyup.enter)="loadSearch()"
-      type="search" 
-      placeholder="Search for a title..." />
-  </div>
+  <input (keyup.enter)="loadSearch($event)" type="search" placeholder="Search for a title..." />
+</div>

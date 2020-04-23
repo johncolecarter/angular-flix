@@ -14,6 +14,6 @@ export class ApiService {
   }
 
   post(data: any) {
-    return this.httpClient.post(this.API_URL, data).toPromise();
+    return this.httpClient.post<any>(this.API_URL, data).toPromise();
   }
 }
