@@ -8,10 +8,12 @@ import { MovieService } from '../services/movie.service';
 })
 export class ListToggleComponent implements OnInit {
   @Input() movie;
+
   constructor(private movieService: MovieService) { }
 
   ngOnInit() {
   }
+
   saveMovieToList() {
     this.movieService.saveToList(this.movie);
 

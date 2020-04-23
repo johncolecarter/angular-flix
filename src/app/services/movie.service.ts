@@ -11,6 +11,7 @@ export class MovieService {
   myMovieList: any[] = [];
 
   constructor(private apiService: ApiService,
+    // tslint:disable-next-line: align
     private movieApiService: MovieApiService) { }
 
   getSearchResults(): any[] {
